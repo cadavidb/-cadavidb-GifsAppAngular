@@ -1,0 +1,35 @@
+
+  <nb-layout-header fixed >
+    <nb-layout-header subheader >
+
+      <h2>Stickers</h2>
+      <nb-form-field class="m-lg-5">
+        <nb-icon nbPrefix icon="search-outline" pack="eva" style="cursor: pointer;" (click)="search()"></nb-icon>
+        <input shape="semi-round" placeholder="Buscar" (keyup.enter)="search()"       #inputsearch type="text" nbInput >
+      </nb-form-field>
+
+    </nb-layout-header>
+    <button (click)="badge(item)" nbButton shape="round" size="tiny" style="margin-left: 10px; background-color: rgb(27, 27, 56); color: white;" *ngFor="let item of history">{{item}}</button>
+
+  </nb-layout-header>
+  <nb-layout-column>
+
+  </nb-layout-column>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
